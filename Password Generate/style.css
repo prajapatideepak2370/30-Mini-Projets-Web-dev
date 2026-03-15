@@ -55,11 +55,21 @@ body{
 .btn i{
     font-size: 28px;
     margin-right: 10px;
-    color: yellow;
+    color: rgb(198, 198, 24);
     padding: 8px;
 }
 .btn {
     border: 0;
     outline: 0;
     background: #019f55;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 300;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 18px;
 }
