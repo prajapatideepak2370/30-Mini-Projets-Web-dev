@@ -8,9 +8,24 @@
 </head>
 <body>
     <div class="notify-btn">
-        <button>Success</button>
-        <button>Error</button>
-        <button>Invalid</button>
+        <button onclick="showToast(successMsg)">Success</button>
+        <button onclick="showToast(errorMsg)">Error</button>
+        <button onclick="showToast(invalidMsg)">Invalid</button>
     </div>
+    <div id="toastBox"></div>
+<script>
+    let toastBox = document.getElementById('toastBox');
+    let successMsg = 'Successfully submitted';
+    let errorMsg = 'Please fix the error!';
+    let invalidMsg = 'Invalid input, check again';
+    
+    function showToast(msg){
+        let toast = document.createElement('div');
+        toast.classList.add('toast');
+        toast.innerHTML = msg;
+        toastBox.appendChild(toast);
+
+    }
+</script>
 </body>
 </html>
