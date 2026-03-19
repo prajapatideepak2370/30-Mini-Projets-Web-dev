@@ -14,6 +14,8 @@
         <button onclick="showToast(invalidMsg)">Invalid</button>
     </div>
     <div id="toastBox"></div>
+
+
 <script>
     let toastBox = document.getElementById('toastBox');
     let successMsg = '<i class="fa-solid fa-check-to-slot"></i> Successfully submitted';
@@ -25,8 +27,16 @@
         toast.classList.add('toast');
         toast.innerHTML = msg;
         toastBox.appendChild(toast);
-
+        if (msg.includes('error')){
+            toast.classList.add('error');
+        } else if (msg.includes('Invalid')){
+            toast.classList.add('invalid');
+        }
+        setTimeout(() => {
+            toast.remove();
+        }, 5000);
     }
 </script>
+
 </body>
 </html>
