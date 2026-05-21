@@ -61,5 +61,17 @@ form button{
     margin: 10px auto 100px;
     cursor: pointer;
     display: none;
-
+}
+#search-result{
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px ;
+}
+#search-result img{
+    width: 80%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 5px;
 }
